@@ -1,0 +1,257 @@
+
+/* cabeza */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabeza {
+    background-color: #d7e8f7;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.boton:hover{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+}
+
+.cabeza a {
+    text-decoration: none;
+    color: #555;
+}
+
+.cabeza a:hover {
+    color: #333;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo1 img {
+    width: 60px;
+    margin-right: 30px;
+    transform: scale(2.4); /* Ajusta el factor de escala según el tamaño deseado */
+}
+
+.logo1 span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+/*Fin de la cabeza*/
+
+
+
+
+
+
+
+
+
+
+.tarjeta-pago {
+    background-color: #344757; /* Fondo  */
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    margin: 20px auto; /* Centrado en la página */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Estilos de encabezados dentro de la tarjeta */
+.tarjeta-pago h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tarjeta-pago p {
+
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Campos del formulario */
+.campo-tarjeta {
+    margin-bottom: 15px;
+
+    
+}
+.campo-tarjeta .texto1{
+    text-align: left;
+    
+    
+}
+
+.campo-tarjeta label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.campo-tarjeta input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+/* Agrupación de campos: Fecha y CVV */
+.campo-tarjeta-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px; /* Espaciado entre los campos */
+}
+
+/* Botón de pagar */
+.boton-pagar {
+    background-color: #3d8edb;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-pagar:hover {
+    background-color: #2b6fb6; /* Cambio de color en hover */
+}
+
+body{
+    background-color: #a7c6d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #D7E8F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    text-align: center;
+    
+}
+.links-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.links-footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.redes-sociales{
+    height: 70px;
+    margin-top: 0.4rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.redes-sociales svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

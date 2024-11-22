@@ -1,0 +1,192 @@
+/* cabeza */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabeza {
+    background-color: #d7e8f7;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.boton:hover{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+}
+
+.cabeza a {
+    text-decoration: none;
+    color: #555;
+}
+
+.cabeza a:hover {
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 30px;
+    transform: scale(2.4); /* Ajusta el factor de escala según el tamaño deseado */
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.fondito {
+    background-color: #add8e6; 
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+}
+
+.nosotros img {
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+
+.invitacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content-invitacion {
+    flex: 1;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+.content-invitacion h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.content-invitacion p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.botonCursos {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    transition: all 0.7s ease;
+    
+}
+
+.botonCursos:hover {
+    padding: 1rem;
+    background-color: #0056b3; 
+}
+
+
+
+footer{
+    background-color: #D7E8F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    text-align: center;
+    
+    
+}
+.links-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.links-footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.redes-sociales{
+    height: 70px;
+    margin-top: 0.4rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.redes-sociales svg{
+    width: 30px;
+    height: 30px;
+}

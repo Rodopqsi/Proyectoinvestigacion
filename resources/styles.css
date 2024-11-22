@@ -1,0 +1,609 @@
+/* cabeza */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabeza {
+    background-color: #d7e8f7;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.boton:hover{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+}
+
+.cabeza a {
+    text-decoration: none;
+    color: #555;
+}
+
+.cabeza a:hover {
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 30px;
+    transform: scale(2.4); /* Ajusta el factor de escala según el tamaño deseado */
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+/*Fin de la cabeza*/
+
+
+/* Slider */
+.slider-box {
+    width: 100%;
+    height: 89.8vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.slider-box ul {
+    display: flex;
+    width: 300%; /* Suficiente espacio para las 3 imágenes */
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    animation: slide 15s infinite; /* 15 segundos en total, 5 por imagen */
+    animation-timing-function: ease-in-out; /* Para una transición suave */
+}
+.slider-box li {
+    width: 33.333%; /* Cada li ocupa 1/3 del ancho total */
+    list-style: none;
+    position: relative;
+    height: 100%;
+}
+.slider-box li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1;
+}
+.slider-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 2; /* Para que el texto esté sobre el fondo semitransparente */
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+.texto h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.texto p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.693);
+}
+/* Animación del carrusel actualizada */
+@keyframes slide {
+    0%, 28% { transform: translateX(0); }
+    33%, 61% { transform: translateX(-33.333%); }
+    66%, 94% { transform: translateX(-66.666%); }
+    100% { transform: translateX(0); }
+}
+/* Adaptabilidad a pantallas pequeñas */
+@media(max-width:991px) {
+    .slider-box {
+        width: 100%;
+        height: 70vh; /* Reduce la altura en pantallas más pequeñas */
+    }
+    .texto h2 {
+        font-size: 30px;
+    }
+    .texto p {
+        font-size: 16px;
+    }
+}
+
+/* Estilo del botón */
+.boton2 {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    transition: all 0.7s ease;
+}
+
+.boton2:hover {
+    padding: 1rem;
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Estilos para la sección de bienvenida */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.content h4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .image img {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Sección de estadísticas */
+.seccion-estadisticas {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.seccion-estadisticas .montaña {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.seccion-estadisticas .montaña::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1;
+}
+
+.seccion-estadisticas .montaña img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; /* Mantener la imagen en su opacidad completa */
+}
+
+.contenedor-estadisticas {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.elemento-estadistica {
+    flex: 1;
+    min-width: 150px;
+    margin: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
+}
+
+.elemento-estadistica h2 {
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.elemento-estadistica p {
+    font-size: 18px;
+    color: #d1d1d1;
+    margin-top: 5px;
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-estadisticas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .elemento-estadistica {
+        margin-bottom: 40px;
+    }
+}
+.estadistica h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Seccion de datos cualitativos y cuantitativos*/
+
+/*Seccion Cuantitativa*/
+.titulo-cuantitativo{
+    font-size: 2rem;
+}
+
+/*Seccion Cualitativa*/
+.container-opiniones {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e9e9e9;
+    padding-bottom: 4rem;
+}
+
+.content-opiniones {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.content-opiniones h4{
+    width: 900px;
+    background-color: #D7E8F7;
+}
+.parrafo-referencias{
+    text-align: center;
+    font-weight: 100;
+    
+}
+.Referencias {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.image-referencia {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Añade espacio entre las imágenes */
+}
+
+.image-referencia img {
+    width: 40%; /* Ajusta este porcentaje según necesites para agrandar las imágenes */
+    height: auto;
+    border-radius: 10px; /* Redondea los bordes si lo prefieres */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las imágenes */
+}
+
+@media (max-width: 768px) {
+    .image-referencia img {
+        width: 90%; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+
+/*Infografia*/
+.content p{
+    margin-top: 3rem;
+}
+
+/*Focus group*/
+
+.container-entrevista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10rem; /* Espacio entre la descripción y el video */
+}
+
+.content-entrevista h3.entrevista {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+.content-entrevista p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out; /* Animación de entrada con ligero retraso */
+}   
+
+.video img {
+    max-width: 100%;
+    width: 35rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el hover */
+    animation: slideIn 1.5s ease-out; /* Animación de entrada */
+}
+
+/* Efecto hover en la imagen */
+.video img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Mayor sombra */
+}
+
+/* Animación para los elementos */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/*Termina focus group*/ 
+
+
+
+
+
+
+.container-entrevista2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 5rem; /* Espacio entre la descripción y el video */
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+
+
+.video2 img {
+    max-width: 60%;
+    width: 30rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 6.5rem;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un diseño más elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el hover */
+    animation: slideIn 1.5s ease-out; /* Animación de entrada */
+}
+
+/* Efecto hover en la imagen */
+.video2 img:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Mayor sombra */
+}
+
+
+
+
+
+
+
+
+/*----------------------------*/
+/*NO TOCAR SCROLL DE PAGINA*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*NO TOCAR SCROLL DE PAGINA*/
+/*----------------------------*/
+
+/*SECUNDARIA*/ 
+.container-secundaria {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    flex-wrap: wrap; /* Para que las imágenes y texto se ajusten en pantallas pequeñas */
+}
+
+.content-secundaria {
+    width: 60%; /* El texto ocupará el 60% del ancho */
+    padding: 20px 0 20px 20px;
+    font-family: Arial, sans-serif;
+}
+.content-secundaria h1{
+    width: 680px;
+}
+.content-secundaria p{
+    width: 680px;
+}
+
+h1, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+}
+
+.image-secundaria {
+    width: 35%; /* Las imágenes ocuparán el 35% del ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px ; /* Espacio entre las imágenes */
+    padding-right: 3rem;
+
+}
+
+.image-secundaria img {
+    width: 100%; /* Las imágenes ocuparán el 100% del contenedor de imágenes */
+    height: auto;
+    border-radius: 10px; /* Borde redondeado para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las imágenes */
+
+}
+
+@media (max-width: 768px) {
+    .container-secundaria {
+        flex-direction: column; /* En pantallas pequeñas, el contenido y las imágenes se apilan verticalmente */
+    }
+
+    .content-secundaria {
+        width: 100%; /* El texto ocupará el 100% del ancho en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .image-secundaria {
+        width: 100%; /* Las imágenes ocuparán el 100% del ancho en pantallas pequeñas */
+    }
+}
+
+
+
+footer{
+    background-color: #D7E8F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    text-align: center;
+    
+    
+}
+.links-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.links-footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.redes-sociales{
+    height: 70px;
+    margin-top: 0.4rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.redes-sociales svg{
+    width: 30px;
+    height: 30px;
+}
+.card-programacion{
+    background-color: #FA4A4A;
+    display: flex;
+    width: 448px;
+    height: 210px;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+.info-card-programacion{
+    font-size: 12px;
+}

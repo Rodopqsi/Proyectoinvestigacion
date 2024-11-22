@@ -1,0 +1,249 @@
+/* cabeza */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabeza {
+    background-color: #d7e8f7;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boton {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.boton:hover{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+}
+
+.cabeza a {
+    text-decoration: none;
+    color: #555;
+}
+
+.cabeza a:hover {
+    color: #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 30px;
+    transform: scale(2.4); /* Ajusta el factor de escala según el tamaño deseado */
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+/*Fin de la cabeza*/
+
+
+.contacto3titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial;
+    
+}
+
+
+
+
+/*Interfaz contacto*/
+
+.encabezado-contacto{
+    background-color: #90D3F4;
+    padding: 2rem;
+}
+.encabezado-contacto h3{
+    font-weight: 900;
+    font-size: 35px;
+    color: white;
+}
+#contactanos{
+    background-color: #344757;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+.informacion-contacto{
+    background-color: #90D3F4;
+    width: 500px;
+    height: 250px;
+    padding: 4rem;
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.informacion-contacto h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+.informacion-contacto ul{
+    list-style-type: circle;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formulario-contacto{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: #90D3F4;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+
+}
+.contenido-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #90D3F4;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  
+  /* Estilo de los elementos del formulario */
+  .form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    margin-top: 1.2rem;
+    font-weight: 600;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin-top: 1rem;
+    padding-right: 5rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  
+  .formulario-contacto textarea {
+    resize: vertical;
+    height: 130px;
+  }
+  
+  .formulario-contacto button {
+    padding: 10px;
+    border-color: black;
+    width: 200px;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    font-weight: 800;
+  }
+  
+  .formulario-contacto button:hover {
+    background-color: #3ab7ff;
+    
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container-info {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .contacto,
+    .contact-form {
+        width: 100%;
+    }
+}
+/*Footer*/
+
+
+footer{
+    background-color: #D7E8F7;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    text-align: center;
+    
+    
+}
+.links-footer{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.links-footer a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.redes-sociales{
+    height: 70px;
+    margin-top: 0.4rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.redes-sociales svg{
+    width: 30px;
+    height: 30px;
+}
+.card-programacion{
+    background-color: #FA4A4A;
+    display: flex;
+    width: 448px;
+    height: 210px;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+.info-card-programacion{
+    font-size: 12px;
+}
